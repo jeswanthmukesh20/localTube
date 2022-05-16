@@ -38,8 +38,6 @@ class YoutubeDownload:
         filename.mkdir(parents=True, exist_ok=True)
         filename.touch(exist_ok=True)
         fh = logging.FileHandler(f"{self.__BASE_DIR / 'logs' / 'Youtube.logs'}", mode='a')
-        # file = open(filename/)
-        # file.close()
         fh.setLevel(logging.DEBUG)
         ch = logging.StreamHandler(stream=sys.stdout)
         ch.setLevel(logging.INFO)
