@@ -11,8 +11,6 @@ import os, sys
 import logging
 
 
-
-
 MONGO_CLIENT = os.getenv("CLIENT_ADDR")
 cursor = pymongo.MongoClient(MONGO_CLIENT)
 db = cursor["youtube"]
